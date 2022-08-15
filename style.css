@@ -13,7 +13,7 @@ body {
 }
 
 .calculator-wrapper {
-    height: 600px;
+    min-height: 600px;
     width: 350px;
     background-color: navy;
     border-radius: 20px;
@@ -31,14 +31,14 @@ body {
     margin: 20px;
     border-radius: 5px;
     padding: 10px;
-    font-family:'Courier New', Courier, monospace
+    word-break: break-all;
 }
 
-.operation {
+#operation-output {
     font-size: 1.8rem;
 }
 
-.results {
+#results-output {
     font-size: 2.5rem;
 }
 
@@ -48,6 +48,7 @@ body {
     margin: 15px;
     display: grid;
     gap: 5px;
+    margin: 17px;
 }
 
 button {
@@ -59,6 +60,7 @@ button {
     background-color: orange;
     font-size: 2rem;
     height: 70px;
+    cursor: pointer;
 }
 
 .double-wide {
@@ -85,44 +87,41 @@ button:hover {
     grid-row: 1;
 }
 
-#seven-button {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#eight-button {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#nine-button {
-    grid-column: 3;
-    grid-row: 2;
-}
-
 #divide-button {
     grid-column: 4;
     grid-row: 2;
 }
 
-#four-button {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-#five-button {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-#six-button {
-    grid-column: 3;
-    grid-row: 3;
-}
-
 #multiply-button {
     grid-column: 4;
     grid-row: 3;
+}
+
+#subtract-button {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#add-button {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#equals-button {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+#decimal-button {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+
+
+#zero-button {
+    grid-column: 2;
+    grid-row: 5;
 }
 
 #one-button {
@@ -140,27 +139,33 @@ button:hover {
     grid-row: 4;
 }
 
-#subtract-button {
-    grid-column: 4;
-    grid-row: 4;
-}
-
-#decimal-button {
+#four-button {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
 }
 
-#zero-button {
+#five-button {
     grid-column: 2;
-    grid-row: 5;
+    grid-row: 3;
 }
 
-#equals-button {
+#six-button {
     grid-column: 3;
-    grid-row: 5;
+    grid-row: 3;
 }
 
-#add-button {
-    grid-column: 4;
-    grid-row: 5;
+#seven-button {
+    grid-column: 1;
+    grid-row: 2;
 }
+
+#eight-button {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#nine-button {
+    grid-column: 3;
+    grid-row: 2;
+}
+
