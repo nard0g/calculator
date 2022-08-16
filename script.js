@@ -1,3 +1,5 @@
+// TODO: Add keyboard support
+
 const currentOperation = {
   firstVariable: "",
   operator: "",
@@ -46,8 +48,8 @@ const operate = function(firstVariable, secondVariable) {
       break;
   }
 
-  if (!currentOperation.operationResult) {
-    alert("Critical Error: You can't divide by zero!")
+  if (!currentOperation.operationResult || currentOperation.operationResult === Infinity) {
+    alert("Critical Error: You can't divide by zero, Or you tried to do something else silly!")
     initCalculator();
   }
 
