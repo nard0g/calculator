@@ -112,12 +112,13 @@ button:hover {
     grid-row: 5;
 }
 
+
+
+
 #decimal-button {
     grid-column: 1;
     grid-row: 5;
 }
-
-
 
 #zero-button {
     grid-column: 2;
